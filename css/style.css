@@ -1,0 +1,156 @@
+
+/*-----------------------------------------------nav----------------------------------------*/
+
+nav{
+    height: 40px;
+}
+
+#logo-container{
+    max-width: 15%;
+}
+
+#logo-container img{
+    height: 100% ;
+}
+
+#search{
+    height: 100%;
+    background-color: gainsboro;
+    font-size: 10px;
+}
+
+.bi-bell-fill{
+    color: orange;
+}
+
+#tutto-tranne-nav{
+    height: calc(100vh - 40px);
+    background-color: orange;
+}
+
+#header-e-main{
+    background-color: brown;
+    width: calc(100% - 60px);
+}
+
+/*-------------------------------aside--------------------------------------------------*/
+
+aside{
+    background-color: #0E243A;
+    background-image: url('../img/sidebar-bg.png');
+    background-size: cover;
+    width: 60px;
+}
+
+aside ul li, div{
+    font-size: 11px;
+}
+
+/*------------------------------------header--------------------------------------------*/
+
+header{
+    height: 75px;
+}
+
+.my_badge{
+    background-color:#165BBA;
+}
+
+header h1{font-size: 20px;}
+
+/*-----------------------------------------------main-------------------------------------*/
+
+main{
+    height: calc(100% - 75px);
+}
+
+#faq button{
+    font-size: 11px;
+}
+
+table span{
+    border-radius: 50%;
+    background-color: orangered;
+    padding: 4px 1px;
+    margin-right: 6px;
+}
+
+table tr td:not(:first-child){
+    width: 76px;
+    text-align: center;
+}
+
+table tr td:first-child{
+    flex-grow: 2;
+}
+
+table tr td button.my-table-button{
+    height: 23px;
+    width: 23px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table tr td button i{font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------------------MEDIA QUERIES-----------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+    aside i{font-size: 18px;}
+
+    header{
+        height: 200px;
+    }
+
+     header h1{font-size: 25px;}
+    
+    main{
+        height: calc(100% - 200px);
+    }
+
+    table tr td:nth-child(2),
+    table tr td:nth-child(3)
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    aside{
+        width: 40px;
+    }
+    #header-e-main{
+        width: calc(100% - 40px);
+    }
+    header{
+        height: 90px;
+    }
+    .my_badge{
+        background-color:#165BBA;
+    }  
+    main{
+        height: calc(100% - 90px);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    aside{
+        width: 100px;
+    }
+
+    #header-e-main{
+        width: calc(100% - 100px);
+    }
+}
